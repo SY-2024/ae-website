@@ -4,7 +4,7 @@
 	"description": "== Theme Name: Bino - Free HTML5 Landing Page Template",
 	"main": "index.js",
 	"scripts": {
-		"dev": "npx tailwindcss -i ./index.css -o ./assets/css/output.css --watch"
+		"dev": "npx tailwindcss -i ./index.css -o ../assets/css/output.css --watch"
 	},
 	"keywords": [],
 	"author": "",
