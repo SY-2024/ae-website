@@ -1,0 +1,293 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #88888815;
+  border-radius: 14px;
+  border: 3px solid #000f3a;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fefefe;
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+  overflow: hidden !important;
+}
+
+.loaded {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(../images/loading.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  -moz-background-size: cover;
+  background-size: cover;
+  margin: -20px 0 0 -20px;
+}
+
+/* Home section */
+
+.home {
+  background: url(../images/homebg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.home_skew_border:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 86px solid #fff;
+  border-right: 680px solid transparent;
+}
+.home_skew_border:before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 86px solid #fff;
+  border-left: 680px solid transparent;
+}
+.main_home {
+  padding-top: 250px;
+  padding-bottom: 250px;
+  display: block;
+}
+
+.main_home h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.main_home p {
+  color: #fff;
+  max-width: 60%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  font-size: 1.125rem;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: #fff;
+  outline: none;
+  background: #000f3a;
+}
+.slick-arrow {
+  background: white;
+  color: #000f3a;
+  cursor: pointer;
+}
+.main_home_slider i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: #000f3a;
+}
+.main_home_slider i.nextprevleft {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #000f3a;
+  background: white;
+  float: left;
+  position: absolute;
+  z-index: 999;
+  top: 400px;
+  font-size: 1.5rem;
+  transition: all 0.6s;
+  left: -60px;
+}
+.main_home_slider i.nextprevright {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #000f3a;
+  background: white;
+  float: right;
+  position: absolute;
+  z-index: 999;
+  top: 400px;
+  font-size: 1.5rem;
+  transition: all 0.6s;
+  right: -50px;
+}
+.main_home_slider i.nextprevleft:hover {
+  color: #fff;
+  background: #000f3a;
+}
+.main_home_slider i.nextprevright:hover {
+  color: #fff;
+  background: #000f3a;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 768px) and (max-width: 1500px) {
+  .main_home {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .main_home_slider i.nextprevleft {
+    top: 250px;
+    left: 40px;
+  }
+  .main_home_slider i.nextprevright {
+    top: 250px;
+    right: 40px;
+  }
+}
+/*
+Separator
+*/
+.separator {
+  width: 10px;
+  height: 10px;
+  margin: 20px auto;
+  background: #e74c3c;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+}
+.separator:after {
+  position: absolute;
+  left: 5%;
+  bottom: 4px;
+  height: 1px;
+  width: 80px;
+  background: #eee;
+  content: "";
+  display: inline-block;
+  margin-left: 20px;
+}
+.separator:before {
+  position: absolute;
+  right: 5%;
+  bottom: 4px;
+  height: 1px;
+  width: 80px;
+  background: #eee;
+  content: "";
+  display: inline-block;
+  margin-right: 20px;
+}
+.separator2 {
+  height: 4px;
+  width: 40px;
+  margin: 10px 0px;
+  background: #eeeeee;
+  position: relative;
+}
+
+.separator3 {
+  height: 2px;
+  width: 40px;
+  margin: 20px auto;
+  background: #888888;
+}
+.separator4 {
+  height: 2px;
+  width: 30px;
+  margin: 20px 0px;
+  background: #f38181;
+}
+
+.divider {
+  height: 1px;
+  background: #eee;
+  width: 100%;
+  overflow: hidden;
+}
+
+/*=====================================================================
+                    counter section css
+=======================================================================*/
+
+.counter .main_counter_area {
+  padding: 80px 20px;
+}
+
+.main_counter_area .single_counter h2 {
+  color: #fff;
+  font-size: 2.8125rem;
+}
+.main_counter_area .single_counter i {
+  color: #fff;
+  font-size: 1.875rem;
+  display: inline-block;
+  border: 1px solid #fff;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.main_counter_area .single_counter h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* scrollup */
+
+.scrollup {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #000f3a;
+  z-index: 1000;
+  transition: opacity 0.5s, background-color 0.5s;
+  -moz-transition: opacity 0.5s, background-color 0.5s;
+  -webkit-transition: opacity 0.5s, background-color 0.5s;
+}
+
+.scrollup:hover {
+  background: #000f3a;
+  opacity: 1;
+}
+
+.scrollup i {
+  font-size: 13px;
+  position: absolute;
+  opacity: 1;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  margin-top: -7px;
+  margin-left: -6px;
+  text-decoration: none;
+}
