@@ -62,20 +62,32 @@
 					<div class="-mx-4">
 						<div class="nav_menu">
 							<nav class="transition-all duration-500">
-								<div class="px-4 mx-auto flex items-center justify-between py-2">
+								<div class="px-4 md:px-8 mx-auto flex items-center justify-between py-2">
 									<!-- Brand and toggle get grouped for better mobile display -->
 									<div class="flex items-center justify-between w-full md:w-auto px-4 lg:px-0">
 										<a class="w-28 h-auto overflow-hidden" href="./index.html">
 											<img src="assets/images/logo.png" class="object-cover object-center" />
 										</a>
-										<button type="button" class="md:hidden border border-[#ddd] p-4 collapsed"
-											data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-											aria-expanded="false">
-											<span class="sr-only">Toggle navigation</span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-										</button>
+										<!-- toggle button -->
+										<div class="md:hidden">
+											<button id="menuButton">
+												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+													viewBox="0 0 24 24" fill="none" stroke="#000f3a" stroke-width="2"
+													stroke-linecap="round" stroke-linejoin="round"
+													class="lucide lucide-menu" id="open">
+													<line x1="4" x2="20" y1="12" y2="12" />
+													<line x1="4" x2="20" y1="6" y2="6" />
+													<line x1="4" x2="20" y1="18" y2="18" />
+												</svg>
+												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+													viewBox="0 0 24 24" fill="none" stroke="#000f3a" stroke-width="2"
+													stroke-linecap="round" stroke-linejoin="round" class="hidden"
+													id="close">
+													<path d="M18 6 6 18" />
+													<path d="m6 6 12 12" />
+												</svg>
+											</button>
+										</div>
 									</div>
 
 									<!-- Collect the nav links, forms, and other content for toggling -->
@@ -97,14 +109,29 @@
 					</div>
 				</div>
 			</div>
+			<div id="mobileMenu"
+				class="absolute top-[90px] w-screen h-0 z-50 right-0 overflow-hidden transition-all duration-500 ease-in-out bg-white">
+				<ul class="flex flex-col gap-3 py-6 px-4">
+					<li class=" group"><a href="./index.html"
+							class="block px-6 hover:bg-primary text-primary group-hover:text-white py-4 transition-colors duration-300 font-semibold">HOME</a>
+					</li>
+					<li class=" group"><a href="./about.html"
+							class="block px-6 hover:bg-primary py-4 text-primary group-hover:text-white   transition-colors duration-300 font-semibold">ABOUT
+							US</a></li>
+					<li class=" group"><a href="./contact.html"
+							class="block px-6 hover:bg-primary text-primary group-hover:text-white py-4 transition-colors duration-300 font-semibold">CONTACT
+							US</a>
+					</li>
+				</ul>
+			</div>
+
 		</header>
-		<!--End of header -->
 
 
 		<!--home Section -->
-		<section id="home" class="h-[300px]">
-			<div class="w-full h-full bg-primary flex items-end justify-center text-white pb-14">
-				<h1 class="text-[70px] font-bold">CONTACT US</h1>
+		<section id="home" class="h-[200px] lg:h-[300px]">
+			<div class="w-full h-full bg-primary flex items-end justify-center text-white pb-7 lg:pb-14">
+				<h1 class="text-5xl lg:text-[70px] font-bold">CONTACT US</h1>
 			</div>
 		</section>
 		<!--End of home section -->
@@ -114,7 +141,7 @@
 		<section id="contact" class="bg-[#eaeaea]">
 			<div class="max-w-6xl mx-auto">
 				<div class="py-12 sections text-center">
-					<div class="flex flex-col lg:flex-row gap-14 my-6 mt-10">
+					<div class="flex flex-col lg:flex-row gap-14 lg:my-6 lg:mt-10 px-6 md:px-12">
 						<div class="lg:w-1/2">
 							<p class="text-xl font-semibold mb-4 text-left text-primary">Leave us a message</p>
 							<form action="" autocomplete="off">
@@ -144,7 +171,8 @@
 							</form>
 						</div>
 						<div class="lg:w-1/2">
-							<div class="space-y-2 pl-5 mb-7 text-left font-semibold">
+							<div class="space-y-2 lg:spl-5 mb-7 text-left font-semibold">
+								<p class="text-primary underline">Contact Information:</p>
 								<p class="text-primary">11 William Street, <br />Greenock, PA15 1BT,
 									GB
 								</p>
@@ -175,21 +203,21 @@
 						</p>
 					</div>
 					<div class="text-sm lg:text-base">
-						<h3 class="text-base lg:text-xl font-bold mb-2">Who we are</h3>
+						<h3 class="text-base lg:text-xl underline font-bold mb-2">Who we are</h3>
 						<ul class=" space-y-2">
 							<li><a href="./about.html">About Us</a></li>
 							<li><a href="./contact.html">Contact</a></li>
 						</ul>
 					</div>
 					<div class="text-sm lg:text-base">
-						<h3 class="text-base lg:text-xl font-bold mb-2">Company</h3>
+						<h3 class="text-base lg:text-xl underline font-bold mb-2">Company</h3>
 						<ul class=" space-y-2">
 							<li><a href="/">Privacy Policy</a></li>
 							<li><a href="/">Terms and Conditions</a></li>
 						</ul>
 					</div>
 					<div class="text-sm lg:text-base">
-						<h3 class="text-base lg:text-xl font-bold mb-2">Connect</h3>
+						<h3 class="text-base lg:text-xl underline font-bold mb-2">Connect</h3>
 						<ul class=" space-y-2">
 							<li><a href="">Facebook</a></li>
 							<li><a href="">Twitter</a></li>
@@ -233,8 +261,19 @@
 			}
 		});
 	</script>
+	<script>
+		const menuButton = document.getElementById("menuButton");
+		const mobileMenu = document.getElementById("mobileMenu");
+		const open = document.getElementById("open");
+		const close = document.getElementById("close");
 
+		menuButton.addEventListener("click", () => {
+			mobileMenu.classList.toggle("h-[90vh]");
+			open.classList.toggle("hidden");
+			close.classList.toggle("hidden");
+		});
 
+	</script>
 </body>
 
 </html>
