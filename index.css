@@ -115,7 +115,7 @@
   top: 400px;
   font-size: 1.5rem;
   transition: all 0.6s;
-  left: -60px;
+  left: 60px;
 }
 .main_home_slider i.nextprevright {
   width: 40px;
@@ -129,7 +129,7 @@
   top: 400px;
   font-size: 1.5rem;
   transition: all 0.6s;
-  right: -50px;
+  right: 60px;
 }
 .main_home_slider i.nextprevleft:hover {
   color: #fff;
@@ -158,7 +158,7 @@
     margin-top: 12px !important;
   }
 }
-@media (min-width: 768px) and (max-width: 1500px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .main_home {
     padding-top: 220px;
     padding-bottom: 220px;
