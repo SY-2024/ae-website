@@ -23,7 +23,7 @@ jobs:
     - name: Execute deployment script via SSH
       run: |
         ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no frontend@35.242.181.156 << 'EOF'
-          cd /ae-website
+          cd /var/www/html/ae-website
           git pull origin main
           sudo systemctl restart nginx
         EOF
