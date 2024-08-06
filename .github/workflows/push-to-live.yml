@@ -13,14 +13,16 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Set up SSH
-      uses: webfactory/ssh-agent@v0.5.3
-      with:
-        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-        
-    - name: Update website and restart Nginx
+    - name: Set up SSH key
       run: |
-        ssh -o StrictHostKeyChecking=no frontend@35.242.181.156 << 'EOF'
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+        chmod 600 ~/.ssh/id_ed25519
+        ssh-keyscan 35.242.181.156 >> ~/.ssh/known_hosts
+
+    - name: Execute deployment script via SSH
+      run: |
+        ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no frontend@35.242.181.156 << 'EOF'
           cd /ae-website
           git pull origin main
           sudo systemctl restart nginx
