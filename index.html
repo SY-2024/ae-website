@@ -4,14 +4,33 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Coming Soon | Maintenance</title>
+	<title>Coming Soon | AfroEuropean</title>
+	<meta name="description" content="Our website is under construction. Check back soon for an amazing experience." />
+	<meta name="author" content="AfroEuropean" />
+
+	<meta property="og:title" content="Coming Soon | AfroEuropean" />
+	<meta property="og:description"
+		content="Our website is under construction. Check back soon for an amazing experience." />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@afroeuropean" />
+	<meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 	<style>
 		:root {
-			--primary-color: #2D2E32;
-			--accent-color: #D02F82;
-			--bg-color: #f4f4f4;
+			--primary-color: #1A1F2C;
+			--accent-color: #9b87f5;
+			--bg-gradient: linear-gradient(135deg, #1A1F2C 0%, #2D3748 100%);
 			--text-color: #fff;
-			--font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			--muted-color: rgba(255, 255, 255, 0.7);
+			--border-color: rgba(255, 255, 255, 0.1);
 		}
 
 		* {
@@ -23,54 +42,259 @@
 		body,
 		html {
 			height: 100%;
-			font-family: var(--font-family);
-			background-color: var(--primary-color);
-			display: flex;
-			justify-content: center;
-			align-items: center;
+			font-family: 'Inter', sans-serif;
+			background: var(--bg-gradient);
 			color: var(--text-color);
-			text-align: center;
+			overflow-x: hidden;
 		}
 
 		.container {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 			padding: 2rem;
-			max-width: 600px;
+			max-width: 100%;
+			margin: 0 auto;
+			position: relative;
+			z-index: 1;
+		}
+
+		.logo {
+			margin-bottom: 2rem;
+			font-size: 2rem;
+			font-weight: 700;
+			letter-spacing: 1px;
+		}
+
+		.content {
+			text-align: center;
+			max-width: 700px;
 		}
 
 		h1 {
-			font-size: 3rem;
-			margin-bottom: 1rem;
+			font-size: 3.5rem;
+			font-weight: 700;
+			margin-bottom: 1.5rem;
+			background: linear-gradient(to right, #9b87f5, #7E69AB);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
 		}
 
-		p {
-			font-size: 1.2rem;
-			margin-bottom: 2rem;
-			line-height: 1.5;
+		.tagline {
+			font-size: 1.25rem;
+			margin-bottom: 3rem;
+			color: var(--muted-color);
+			line-height: 1.6;
 		}
 
-		.loader {
-			width: 48px;
-			height: 48px;
-			border: 5px solid rgba(255, 255, 255, 0.3);
-			border-top-color: var(--accent-color);
+		.countdown {
+			display: flex;
+			justify-content: center;
+			gap: 2rem;
+			margin-bottom: 3rem;
+		}
+
+		.countdown-item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.countdown-value {
+			font-size: 2.5rem;
+			font-weight: 700;
+			background: rgba(255, 255, 255, 0.1);
+			backdrop-filter: blur(8px);
+			border-radius: 8px;
+			padding: 1rem;
+			min-width: 80px;
+			min-height: 80px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid var(--border-color);
+		}
+
+		.countdown-label {
+			margin-top: 0.5rem;
+			font-size: 0.875rem;
+			color: var(--muted-color);
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		.email-form {
+			display: flex;
+			margin-bottom: 3rem;
+			width: 100%;
+			max-width: 500px;
+		}
+
+		.email-input {
+			flex: 1;
+			padding: 1rem 1.5rem;
+			border: 1px solid var(--border-color);
+			border-radius: 8px 0 0 8px;
+			background: rgba(255, 255, 255, 0.05);
+			color: var(--text-color);
+			font-size: 1rem;
+			outline: none;
+			transition: all 0.3s ease;
+		}
+
+		.email-input:focus {
+			border-color: var(--accent-color);
+			box-shadow: 0 0 0 2px rgba(155, 135, 245, 0.3);
+		}
+
+		.submit-button {
+			padding: 1rem 1.5rem;
+			background: var(--accent-color);
+			color: var(--text-color);
+			border: none;
+			border-radius: 0 8px 8px 0;
+			font-size: 1rem;
+			font-weight: 600;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+
+		.submit-button:hover {
+			background: #8a76e5;
+		}
+
+		.learn-platform {
+			margin-top: 2rem;
+			padding: 1rem 2rem;
+			background: rgba(155, 135, 245, 0.1);
+			border: 1px solid rgba(155, 135, 245, 0.3);
+			border-radius: 8px;
+			transition: all 0.3s ease;
+		}
+
+		.learn-platform a {
+			color: var(--accent-color);
+			text-decoration: none;
+			font-weight: 600;
+			transition: all 0.3s ease;
+		}
+
+		.learn-platform a:hover {
+			text-decoration: underline;
+		}
+
+		.social-links {
+			display: flex;
+			gap: 1.5rem;
+			margin-top: 3rem;
+		}
+
+		.social-link {
+			color: var(--muted-color);
+			font-size: 1.5rem;
+			transition: all 0.3s ease;
+		}
+
+		.social-link:hover {
+			color: var(--accent-color);
+		}
+
+		.footer {
+			margin-top: 4rem;
+			color: var(--muted-color);
+			font-size: 0.875rem;
+		}
+
+		.shapes {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+			z-index: -1;
+		}
+
+		.shape {
+			position: absolute;
+			background: rgba(155, 135, 245, 0.15);
 			border-radius: 50%;
-			animation: spin 1s linear infinite;
-			margin: 0 auto;
+			filter: blur(50px);
 		}
 
-		@keyframes spin {
-			to {
-				transform: rotate(360deg);
+		.shape-1 {
+			width: 400px;
+			height: 400px;
+			top: -100px;
+			left: -100px;
+		}
+
+		.shape-2 {
+			width: 300px;
+			height: 300px;
+			bottom: -50px;
+			right: -50px;
+			background: rgba(126, 105, 171, 0.15);
+		}
+
+		@keyframes float {
+
+			0%,
+			100% {
+				transform: translateY(0);
+			}
+
+			50% {
+				transform: translateY(-20px);
 			}
 		}
 
-		@media (max-width: 600px) {
+		.animate-float {
+			animation: float 6s ease-in-out infinite;
+		}
+
+		@media (max-width: 768px) {
 			h1 {
-				font-size: 2rem;
+				font-size: 2.5rem;
 			}
 
-			p {
-				font-size: 1rem;
+			.countdown {
+				gap: 1rem;
+			}
+
+			.countdown-value {
+				font-size: 1.5rem;
+				min-width: 60px;
+				min-height: 60px;
+				padding: 0.75rem;
+			}
+
+			.email-form {
+				flex-direction: column;
+			}
+
+			.email-input {
+				border-radius: 8px;
+				margin-bottom: 1rem;
+			}
+
+			.submit-button {
+				border-radius: 8px;
+				width: 100%;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.countdown {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			.countdown-item {
+				margin-bottom: 1rem;
 			}
 		}
 	</style>
@@ -78,10 +302,95 @@
 
 <body>
 	<div class="container">
-		<h1>🚧 Coming Soon</h1>
-		<p>We’re currently making some improvements.<br />Please check back shortly!</p>
-		<div class="loader"></div>
+		<div class="logo">AfroEuropean</div>
+
+		<div class="content">
+			<h1>Coming Soon</h1>
+			<p class="tagline">We're working hard to bring you something amazing. Our website is under construction, but
+				we're launching soon!</p>
+
+			<div class="countdown">
+				<div class="countdown-item">
+					<div class="countdown-value" id="days">0</div>
+					<div class="countdown-label">Days</div>
+				</div>
+				<div class="countdown-item">
+					<div class="countdown-value" id="hours">0</div>
+					<div class="countdown-label">Hours</div>
+				</div>
+				<div class="countdown-item">
+					<div class="countdown-value" id="minutes">0</div>
+					<div class="countdown-label">Minutes</div>
+				</div>
+				<div class="countdown-item">
+					<div class="countdown-value" id="seconds">0</div>
+					<div class="countdown-label">Seconds</div>
+				</div>
+			</div>
+
+
+			<div class="learn-platform">
+				<p>In the meantime, check our learning platform <a href="https://www.learn.afroeuropean.uk/"
+						target="_blank">learn.afroeuropean.uk</a></p>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p>&copy; 2023 AfroEuropean. All rights reserved.</p>
+		</div>
+
+		<div class="shapes">
+			<div class="shape shape-1 animate-float"></div>
+			<div class="shape shape-2"></div>
+		</div>
 	</div>
+
+	<script>
+		// Set the launch date (30 days from now)
+		const launchDate = new Date();
+		launchDate.setDate(launchDate.getDate() + 30);
+
+		// Update the countdown every second
+		const countdown = setInterval(function () {
+			const now = new Date().getTime();
+			const distance = launchDate - now;
+
+			// Time calculations
+			const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			// Display the result
+			document.getElementById("days").innerText = days;
+			document.getElementById("hours").innerText = hours;
+			document.getElementById("minutes").innerText = minutes;
+			document.getElementById("seconds").innerText = seconds;
+
+			// If the countdown is finished, display a message
+			if (distance < 0) {
+				clearInterval(countdown);
+				document.getElementById("days").innerText = "0";
+				document.getElementById("hours").innerText = "0";
+				document.getElementById("minutes").innerText = "0";
+				document.getElementById("seconds").innerText = "0";
+			}
+		}, 1000);
+
+		// Form submission
+		const form = document.querySelector('.email-form');
+		form.addEventListener('submit', function (e) {
+			e.preventDefault();
+			const email = this.querySelector('.email-input').value;
+
+			if (email) {
+				alert('Thank you! We will notify you when we launch.');
+				this.reset();
+			}
+		});
+	</script>
+	<!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+	<script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
 </body>
 
 </html>
