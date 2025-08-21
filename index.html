@@ -2,395 +2,482 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Coming Soon | AfroEuropean</title>
-	<meta name="description" content="Our website is under construction. Check back soon for an amazing experience." />
-	<meta name="author" content="AfroEuropean" />
-
-	<meta property="og:title" content="Coming Soon | AfroEuropean" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Afro European - Cultural Bridge Through Education</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+		rel="stylesheet">
+	<meta name="keywords"
+		content="Education, Sports, Information, African animation, African stories, Graphics courses, Animation courses, Yoruba language, Igbo language, Hausa language, German language, Life in the UK preparation, Children's courses, Afro European">
+	<meta name="author" content="Afro European">
+	<meta name="robots" content="index, follow">
+	<meta property="og:title" content="Home | Afro European">
 	<meta property="og:description"
-		content="Our website is under construction. Check back soon for an amazing experience." />
-	<meta property="og:type" content="website" />
-	<meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+		content="Explore Afro European for educational and cultural courses including graphics and animation for children, Yoruba, Igbo, Hausa, and German language courses, and Life in the UK preparation. Discover African animation and stories.">
+	<meta property="og:type" content="website">
+	<!-- <meta property="og:url" content="https://www.afroeuropean.com"> -->
+	<meta property="og:image" content="https://sy-2024.github.io/ae-website/assets/images/og-image.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Home | Afro European">
+	<meta name="twitter:description"
+		content="Afro European offers a variety of educational and cultural courses including graphics and animation for children, Yoruba, Igbo, Hausa, and German language courses, as well as Life in the UK preparation. Discover African animation and stories.">
+	<!-- <meta name="twitter:image" content="https://sy-2024.github.io/ae-website/assets/images/"> -->
 
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@afroeuropean" />
-	<meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+	<link rel="stylesheet" href="assets/css/output.css">
 	<style>
-		:root {
-			--primary-color: #1A1F2C;
-			--accent-color: #9b87f5;
-			--bg-gradient: linear-gradient(135deg, #1A1F2C 0%, #2D3748 100%);
-			--text-color: #fff;
-			--muted-color: rgba(255, 255, 255, 0.7);
-			--border-color: rgba(255, 255, 255, 0.1);
-		}
-
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-
-		body,
-		html {
-			height: 100%;
-			font-family: 'Inter', sans-serif;
-			background: var(--bg-gradient);
-			color: var(--text-color);
-			overflow-x: hidden;
-		}
-
-		.container {
-			min-height: 100vh;
+		.hero {
+			height: 100vh;
+			background: linear-gradient(rgba(0, 15, 58, 0.7), rgba(0, 15, 58, 0.7)),
+				url("./assets/images/homebg.jpg") no-repeat center center/cover;
 			display: flex;
-			flex-direction: column;
-			justify-content: center;
 			align-items: center;
-			padding: 2rem;
-			max-width: 100%;
-			margin: 0 auto;
-			position: relative;
-			z-index: 1;
-		}
-
-		.logo {
-			margin-bottom: 2rem;
-			font-size: 2rem;
-			font-weight: 700;
-			letter-spacing: 1px;
-		}
-
-		.content {
+			justify-content: center;
 			text-align: center;
-			max-width: 700px;
-		}
-
-		h1 {
-			font-size: 3.5rem;
-			font-weight: 700;
-			margin-bottom: 1.5rem;
-			background: linear-gradient(to right, #9b87f5, #7E69AB);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-clip: text;
-		}
-
-		.tagline {
-			font-size: 1.25rem;
-			margin-bottom: 3rem;
-			color: var(--muted-color);
-			line-height: 1.6;
-		}
-
-		.countdown {
-			display: flex;
-			justify-content: center;
-			gap: 2rem;
-			margin-bottom: 3rem;
-		}
-
-		.countdown-item {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-
-		.countdown-value {
-			font-size: 2.5rem;
-			font-weight: 700;
-			background: rgba(255, 255, 255, 0.1);
-			backdrop-filter: blur(8px);
-			border-radius: 8px;
-			padding: 1rem;
-			min-width: 80px;
-			min-height: 80px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			border: 1px solid var(--border-color);
-		}
-
-		.countdown-label {
-			margin-top: 0.5rem;
-			font-size: 0.875rem;
-			color: var(--muted-color);
-			text-transform: uppercase;
-			letter-spacing: 1px;
-		}
-
-		.email-form {
-			display: flex;
-			margin-bottom: 3rem;
-			width: 100%;
-			max-width: 500px;
-		}
-
-		.email-input {
-			flex: 1;
-			padding: 1rem 1.5rem;
-			border: 1px solid var(--border-color);
-			border-radius: 8px 0 0 8px;
-			background: rgba(255, 255, 255, 0.05);
-			color: var(--text-color);
-			font-size: 1rem;
-			outline: none;
-			transition: all 0.3s ease;
-		}
-
-		.email-input:focus {
-			border-color: var(--accent-color);
-			box-shadow: 0 0 0 2px rgba(155, 135, 245, 0.3);
-		}
-
-		.submit-button {
-			padding: 1rem 1.5rem;
-			background: var(--accent-color);
-			color: var(--text-color);
-			border: none;
-			border-radius: 0 8px 8px 0;
-			font-size: 1rem;
-			font-weight: 600;
-			cursor: pointer;
-			transition: all 0.3s ease;
-		}
-
-		.submit-button:hover {
-			background: #8a76e5;
-		}
-
-		.learn-platform {
-			margin-top: 2rem;
-			padding: 1rem 2rem;
-			background: rgba(155, 135, 245, 0.1);
-			border: 1px solid rgba(155, 135, 245, 0.3);
-			border-radius: 8px;
-			transition: all 0.3s ease;
-		}
-
-		.learn-platform a {
-			color: var(--accent-color);
-			text-decoration: none;
-			font-weight: 600;
-			transition: all 0.3s ease;
-		}
-
-		.learn-platform a:hover {
-			text-decoration: underline;
-		}
-
-		.social-links {
-			display: flex;
-			gap: 1.5rem;
-			margin-top: 3rem;
-		}
-
-		.social-link {
-			color: var(--muted-color);
-			font-size: 1.5rem;
-			transition: all 0.3s ease;
-		}
-
-		.social-link:hover {
-			color: var(--accent-color);
-		}
-
-		.footer {
-			margin-top: 4rem;
-			color: var(--muted-color);
-			font-size: 0.875rem;
-		}
-
-		.shapes {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			overflow: hidden;
-			z-index: -1;
-		}
-
-		.shape {
-			position: absolute;
-			background: rgba(155, 135, 245, 0.15);
-			border-radius: 50%;
-			filter: blur(50px);
-		}
-
-		.shape-1 {
-			width: 400px;
-			height: 400px;
-			top: -100px;
-			left: -100px;
-		}
-
-		.shape-2 {
-			width: 300px;
-			height: 300px;
-			bottom: -50px;
-			right: -50px;
-			background: rgba(126, 105, 171, 0.15);
-		}
-
-		@keyframes float {
-
-			0%,
-			100% {
-				transform: translateY(0);
-			}
-
-			50% {
-				transform: translateY(-20px);
-			}
-		}
-
-		.animate-float {
-			animation: float 6s ease-in-out infinite;
-		}
-
-		@media (max-width: 768px) {
-			h1 {
-				font-size: 2.5rem;
-			}
-
-			.countdown {
-				gap: 1rem;
-			}
-
-			.countdown-value {
-				font-size: 1.5rem;
-				min-width: 60px;
-				min-height: 60px;
-				padding: 0.75rem;
-			}
-
-			.email-form {
-				flex-direction: column;
-			}
-
-			.email-input {
-				border-radius: 8px;
-				margin-bottom: 1rem;
-			}
-
-			.submit-button {
-				border-radius: 8px;
-				width: 100%;
-			}
-		}
-
-		@media (max-width: 480px) {
-			.countdown {
-				flex-wrap: wrap;
-				justify-content: center;
-			}
-
-			.countdown-item {
-				margin-bottom: 1rem;
-			}
+			color: white;
+			padding-top: 80px;
 		}
 	</style>
 </head>
 
+
 <body>
-	<div class="container">
-		<div class="logo">AfroEuropean</div>
+	<!-- Header -->
+	<header id="header">
+		<div class="container nav-container">
+			<div class="logo">
+				<img src="assets/images/logo.png" alt="Afro European Logo">
+			</div>
 
-		<div class="content">
-			<h1>Coming Soon</h1>
-			<p class="tagline">We're working hard to bring you something amazing. Our website is under construction, but
-				we're launching soon!</p>
+			<button class="mobile-toggle" id="mobileToggle">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</button>
 
-			<div class="countdown">
-				<div class="countdown-item">
-					<div class="countdown-value" id="days">0</div>
-					<div class="countdown-label">Days</div>
+			<ul class="nav-menu" id="navMenu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#team">Our Team</a></li>
+				<li><a href="/contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<!-- Hero Section -->
+	<section class="hero" id="home">
+		<div class="container hero-content">
+			<h1>Building Cultural Bridges Through Education</h1>
+			<p>Afro European is more than a brand — it's a cultural bridge connecting African heritage with global
+				opportunities through innovative learning experiences.</p>
+			<div>
+				<a href="#services" class="btn">Explore Our Services</a>
+				<a href="#contact" class="btn btn-outline">Get In Touch</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section class="about" id="about">
+		<div class="container mx-auto px-10 xl:px-0">
+			<h2 class="section-title">About Us</h2>
+			<div class="about-content">
+				<div class="about-text text-center lg:text-left flex-col items-center lg:flex-row" id="aboutText">
+					<p>Afro European Business Services is more than a brand — it's a cultural bridge.</p>
+					<p>Rooted in Nigeria and reaching across the world, we are dedicated to preserving and promoting
+						African identity through storytelling, language learning, and digital innovation. We believe
+						that culture is not static — it's living, breathing, and evolving with every generation.</p>
+					<p>Afro-European Business Services provides online language courses, cultural education software,
+						and builds tailored educational platforms for schools and institutions. We support learners of
+						all ages in exploring local languages like Yoruba, Igbo, and Hausa, paired with global languages
+						such as German.</p>
+					<p>Whether you're a student curious about your roots, a parent raising multilingual children, an
+						educator seeking curriculum support, or a company looking to invest in inclusive, cross-cultural
+						learning — Afro European meets you where you are and helps you go further.</p>
 				</div>
-				<div class="countdown-item">
-					<div class="countdown-value" id="hours">0</div>
-					<div class="countdown-label">Hours</div>
+				<div class="about-image" id="aboutImage">
+					<img src="assets/images/about.jpeg" alt="About Afro European">
 				</div>
-				<div class="countdown-item">
-					<div class="countdown-value" id="minutes">0</div>
-					<div class="countdown-label">Minutes</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services Section -->
+	<section class="services" id="services">
+		<div class="container">
+			<h2 class="section-title">Our Services</h2>
+			<div class="services-grid">
+				<div class="service-card" id="service1">
+					<div class="service-icon">✨</div>
+					<h3>Language Learning Platforms</h3>
+					<p>Learn Yoruba, Igbo, or Hausa, paired with German and other languages, through engaging lessons,
+						cultural insights, and real-world applications.</p>
 				</div>
-				<div class="countdown-item">
-					<div class="countdown-value" id="seconds">0</div>
-					<div class="countdown-label">Seconds</div>
+
+				<div class="service-card" id="service2">
+					<div class="service-icon">💻</div>
+					<h3>Cultural Education Software</h3>
+					<p>Tools designed to help schools and institutions teach African languages and culture in a modern,
+						interactive way.</p>
+				</div>
+
+				<div class="service-card" id="service3">
+					<div class="service-icon">📱</div>
+					<h3>Custom Educational Platforms</h3>
+					<p>We build and deploy user-friendly digital platforms that make language and cultural learning
+						accessible to students, teachers, and communities.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Team Section -->
+	<section class="team" id="team">
+		<div class="container">
+			<h2 class="section-title">Our Team</h2>
+			<div class="team-grid">
+				<div class="team-member" id="member1">
+					<div class="member-image">
+						<img src="assets/images/durowoju.jpg" alt="Team Member">
+					</div>
+					<div class="member-info">
+						<h3>O. Durowoju</h3>
+						<p>Owner & Director</p>
+					</div>
+				</div>
+
+				<div class="team-member" id="member2">
+					<div class="member-image">
+						<img src="assets/images/sodiya.jpg" alt="Team Member" class="object-top">
+					</div>
+					<div class="member-info">
+						<h3>O. Sodiya</h3>
+						<p>Digital Project Manager</p>
+					</div>
+				</div>
+
+				<div class="team-member" id="member3">
+					<div class="member-image">
+						<img src="assets/images/ebuka.jpeg" alt="Team Member" class="object-top">
+					</div>
+					<div class="member-info">
+						<h3>Dr Ebuka Orangebunam</h3>
+						<p>Graphics Manager</p>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div style="text-align: center; margin-top: 40px;">
+				<p>Behind Afro European services is a team of passionate culture-shapers, educators, storytellers,
+					designers, and digital thinkers who believe in the power of culture.</p>
+				<p>We are a diverse, cross-continental team grounded in African values and energized by global impact.
+					From tech and education to content and culture, each member of our team brings a unique voice to the
+					table, united by one mission: To make African culture visible, accessible, and empowering —
+					everywhere.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Vision -->
+	<section class="clients" id="clients">
+		<div class="container">
+			<h2 class="section-title">Our Vision</h2>
+
+
+			<!-- <article class="text-black font-medium leading-loose text-justify mb-4">
+				&quot;Japa&quot; is a term most of us are all too familiar with these days.
+				Nigerians, Africans
+				altogether are looking for greener pastures outside their country and continent.
+				For
+				many people, the United Kingdom is the place of choice to relocate to. This is
+				where
+				we, Afro-European Business Services Ltd. come in. </article> -->
+
+			<article class=" text-justify">
+				Afro-European Business Services is the company behind several different projects
+				and partner-undertakings. <br />
+				Our vision is to provide a platform, a place for people to come together under
+				different aspects. A melting pot, if you so wish to call it, between Africa and Europe.
+				Although, we wouldn&#39;t want to limit ourselves to these two continents alone.
+				Wherever there are Africans, wanting to connect or come together, we aim to be in
+				the middle of it, and make it happen.<br />
+				Our projects are heavily focused on culture, heritage and most importantly the
+				identity that comes from all that.<br />
+				For those who know, we are providing a place to keep in touch with culture and
+				traditions, and for those who want to learn, we proudly want to show off, what makes
+				us who we are.<br />
+				We are privileged to live in times of technological advancement, so we believe we
+				should put this to good use. The world has become a global village, and we can stay
+				connected to friends and family wherever we find ourselves in the world.<br />
+				Why not also stay in touch with our culture, our traditions and our heritage. It is
+				wonderful to see people coming together from different cultures, so we want to keep
+				tapping into this. This can only foster harmony, as the more we know about each
+				other, the more we can appreciate each other. As with so many things, it’s the
+				differences that make us unique, but they can also bind us together.<br />
+				The mission is to encourage those who leave their countries and continent to not
+				forget where they have come from, and carry home in their heart, wherever they
+				might find themselves.<br />
+				We need to showcase the beauty and the richness of our continent and change
+				stereotypes. We aim to get to a point, where we people want to give back to their
+				respective communities and help create better lives for those, we left at home in
+				Africa.
+			</article>
+
+		</div>
+	</section>
+
+
+	<!-- Clients Section -->
+	<section class="clients" id="clients">
+		<div class="container">
+			<h2 class="section-title">Our Clients</h2>
+			<div class="clients-logos">
+				<div class="client-logo" id="client1">
+					<img src="assets/images/imagine.png" alt="Client Logo">
+				</div>
+				<div class="client-logo" id="client2">
+					<img src="assets/images/cals.png" alt="Client Logo">
 				</div>
 			</div>
 
-
-			<div class="learn-platform">
-				<p>In the meantime, check our learning platform <a href="https://www.learn.afroeuropean.uk/"
-						target="_blank">learn.afroeuropean.uk</a></p>
+			<div style="text-align: center; margin-top: 40px;">
+				<p>Afro European works with families, schools, educators, and forward-thinking organizations who believe
+					in the power of African identity and the potential of cross-cultural learning. Our clients span from
+					families reconnecting with their roots, to institutions aiming to enrich their
+					curriculum with indigenous languages, and companies seeking meaningful cultural partnerships.</p>
+				<p>Whether you're an individual learner, a school administrator, or a CEO — if you value inclusion,
+					culture, and global relevance, you'll feel at home with Afro European.</p>
 			</div>
 		</div>
+	</section>
 
-		<div class="footer">
-			<p>&copy; 2023 AfroEuropean. All rights reserved.</p>
+	<!--Footer section-->
+	<footer class="bg-primary/20 text-primary">
+		<div class="container mx-auto py-6 lg:pt-10 lg:pb-10 px-4 xl:px-0">
+			<section class="mb-6 grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+				<div class="col-span-2 fade-in">
+					<img src="./assets/images/logo.png" alt="" width="112">
+					<p class="my-4 text-sm text-left">11 William Street, <br />Greenock, PA15 1BT</p>
+				</div>
+				<div class="text-sm fade-in delay-1">
+					<h3 class="text-base lg:text-xl underline font-bold mb-2 text-left">Who we are</h3>
+					<ul class="space-y-2 text-left">
+						<li><a href="./about.html">About Us</a></li>
+						<li><a href="./contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="text-sm fade-in delay-2">
+					<h3 class="text-base lg:text-xl underline font-bold mb-2 text-left">Company</h3>
+					<ul class="space-y-2 text-left">
+						<li><a href="/">Privacy Policy</a></li>
+						<li><a href="/">Terms and Conditions</a></li>
+					</ul>
+				</div>
+				<div class="text-sm fade-in delay-3">
+					<h3 class="text-base lg:text-xl underline font-bold mb-2 text-left">Connect</h3>
+					<ul class="flex gap-2 text-left">
+						<li>
+							<a href=""
+								class="flex items-center justify-center w-10 h-10 bg-primary text-white rounded-xl hover:bg-black hover-lift">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+									stroke-linejoin="round" class="feather feather-x">
+									<line x1="18" y1="6" x2="6" y2="18"></line>
+									<line x1="6" y1="6" x2="18" y2="18"></line>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/company/afro-european-business-services-ltd"
+								target="_blank"
+								class="flex items-center justify-center w-10 h-10 bg-primary text-white rounded-xl hover:bg-black hover-lift">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+									fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round"
+									stroke-linejoin="round" class="lucide lucide-linkedin">
+									<path
+										d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+									<rect width="4" height="12" x="2" y="9" />
+									<circle cx="4" cy="4" r="2" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/heartofafrica2025/" target="_blank"
+								class="flex items-center justify-center w-10 h-10 bg-primary text-white rounded-xl hover:bg-black hover-lift">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+									fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round"
+									stroke-linejoin="round" class="lucide lucide-instagram">
+									<rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+									<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+									<line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<p class="text-center fade-in">©2024, All Rights Reserved</p>
 		</div>
+	</footer>
 
-		<div class="shapes">
-			<div class="shape shape-1 animate-float"></div>
-			<div class="shape shape-2"></div>
-		</div>
+	<div>
+		<a class="scrollup flex items-center justify-center" href="#header"><svg xmlns="http://www.w3.org/2000/svg"
+				width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+				stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up">
+				<path d="m18 15-6-6-6 6" />
+			</svg></a>
 	</div>
 
+	<script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+	<script src="assets/js/vendor/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.magnific-popup.js"></script>
+	<script src="assets/js/jquery.mixitup.min.js"></script>
+	<script src="assets/js/jquery.easing.1.3.js"></script>
+	<script src="assets/js/jquery.masonry.min.js"></script>
+	<script src="assets/css/slick/slick.js"></script>
+	<script src="assets/css/slick/slick.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 	<script>
-		// Set the launch date (30 days from now)
-		const launchDate = new Date();
-		launchDate.setDate(launchDate.getDate() + 30);
+		// Mobile menu toggle
+		const mobileToggle = document.getElementById('mobileToggle');
+		const navMenu = document.getElementById('navMenu');
 
-		// Update the countdown every second
-		const countdown = setInterval(function () {
-			const now = new Date().getTime();
-			const distance = launchDate - now;
+		mobileToggle.addEventListener('click', () => {
+			navMenu.classList.toggle('active');
+		});
 
-			// Time calculations
-			const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		// Header scroll effect
+		const header = document.getElementById('header');
 
-			// Display the result
-			document.getElementById("days").innerText = days;
-			document.getElementById("hours").innerText = hours;
-			document.getElementById("minutes").innerText = minutes;
-			document.getElementById("seconds").innerText = seconds;
-
-			// If the countdown is finished, display a message
-			if (distance < 0) {
-				clearInterval(countdown);
-				document.getElementById("days").innerText = "0";
-				document.getElementById("hours").innerText = "0";
-				document.getElementById("minutes").innerText = "0";
-				document.getElementById("seconds").innerText = "0";
-			}
-		}, 1000);
-
-		// Form submission
-		const form = document.querySelector('.email-form');
-		form.addEventListener('submit', function (e) {
-			e.preventDefault();
-			const email = this.querySelector('.email-input').value;
-
-			if (email) {
-				alert('Thank you! We will notify you when we launch.');
-				this.reset();
+		window.addEventListener('scroll', () => {
+			if (window.scrollY > 50) {
+				header.classList.add('scrolled');
+			} else {
+				header.classList.remove('scrolled');
 			}
 		});
+
+		// Animation on scroll
+		function isInViewport(element) {
+			const rect = element.getBoundingClientRect();
+			return (
+				rect.top >= 0 &&
+				rect.left >= 0 &&
+				rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+				rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+			);
+		}
+
+		function checkScroll() {
+			const aboutText = document.getElementById('aboutText');
+			const aboutImage = document.getElementById('aboutImage');
+			const service1 = document.getElementById('service1');
+			const service2 = document.getElementById('service2');
+			const service3 = document.getElementById('service3');
+			const member1 = document.getElementById('member1');
+			const member2 = document.getElementById('member2');
+			const member3 = document.getElementById('member3');
+			const member4 = document.getElementById('member4');
+			const client1 = document.getElementById('client1');
+			const client2 = document.getElementById('client2');
+			const client3 = document.getElementById('client3');
+			const client4 = document.getElementById('client4');
+			const contactInfo = document.getElementById('contactInfo');
+			const contactForm = document.getElementById('contactForm');
+
+			if (isInViewport(aboutText) && !aboutText.classList.contains('animated')) {
+				aboutText.classList.add('animated');
+			}
+
+			if (isInViewport(aboutImage) && !aboutImage.classList.contains('animated')) {
+				aboutImage.classList.add('animated');
+			}
+
+			if (isInViewport(service1) && !service1.classList.contains('animated')) {
+				service1.classList.add('animated');
+			}
+
+			if (isInViewport(service2) && !service2.classList.contains('animated')) {
+				service2.classList.add('animated');
+			}
+
+			if (isInViewport(service3) && !service3.classList.contains('animated')) {
+				service3.classList.add('animated');
+			}
+
+			if (isInViewport(member1) && !member1.classList.contains('animated')) {
+				member1.classList.add('animated');
+			}
+
+			if (isInViewport(member2) && !member2.classList.contains('animated')) {
+				member2.classList.add('animated');
+			}
+
+			if (isInViewport(member3) && !member3.classList.contains('animated')) {
+				member3.classList.add('animated');
+			}
+
+			if (isInViewport(member4) && !member4.classList.contains('animated')) {
+				member4.classList.add('animated');
+			}
+
+			if (isInViewport(client1) && !client1.classList.contains('animated')) {
+				client1.classList.add('animated');
+			}
+
+			if (isInViewport(client2) && !client2.classList.contains('animated')) {
+				client2.classList.add('animated');
+			}
+
+			if (isInViewport(client3) && !client3.classList.contains('animated')) {
+				client3.classList.add('animated');
+			}
+
+			if (isInViewport(client4) && !client4.classList.contains('animated')) {
+				client4.classList.add('animated');
+			}
+
+			if (isInViewport(contactInfo) && !contactInfo.classList.contains('animated')) {
+				contactInfo.classList.add('animated');
+			}
+
+			if (isInViewport(contactForm) && !contactForm.classList.contains('animated')) {
+				contactForm.classList.add('animated');
+			}
+		}
+
+		window.addEventListener('scroll', checkScroll);
+		window.addEventListener('load', checkScroll);
+
+		// Smooth scrolling for navigation links
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				const targetId = this.getAttribute('href');
+				if (targetId === '#') return;
+
+				const targetElement = document.querySelector(targetId);
+				if (targetElement) {
+					window.scrollTo({
+						top: targetElement.offsetTop - 80,
+						behavior: 'smooth'
+					});
+
+					// Close mobile menu if open
+					if (navMenu.classList.contains('active')) {
+						navMenu.classList.remove('active');
+					}
+				}
+			});
+		});
 	</script>
-	<!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-	<script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
 </body>
 
 </html>
