@@ -1,14 +1,13 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Home | Afro European</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<!-- Additional meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Afro European - Cultural Bridge Through Education</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+		rel="stylesheet">
 	<meta name="keywords"
 		content="Education, Sports, Information, African animation, African stories, Graphics courses, Animation courses, Yoruba language, Igbo language, Hausa language, German language, Life in the UK preparation, Children's courses, Afro European">
 	<meta name="author" content="Afro European">
@@ -25,678 +24,459 @@
 		content="Afro European offers a variety of educational and cultural courses including graphics and animation for children, Yoruba, Igbo, Hausa, and German language courses, as well as Life in the UK preparation. Discover African animation and stories.">
 	<!-- <meta name="twitter:image" content="https://sy-2024.github.io/ae-website/assets/images/"> -->
 
-	<link rel="stylesheet" href="assets/css/iconfont.css">
-	<link rel="stylesheet" href="assets/css/slick/slick.css">
-	<link rel="stylesheet" href="assets/css/slick/slick-theme.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/jquery.fancybox.css">
-	<!-- <link rel="stylesheet" href="assets/css/bootstrap.css">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="assets/css/output.css">
-	<link rel="stylesheet" href="assets/css/magnific-popup.css">
-	<!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
-
-
-	<!--For Plugins external css-->
-	<link rel="stylesheet" href="assets/css/plugins.css" />
-
-	<!--Theme custom css -->
-	<!-- <link rel="stylesheet" href="assets/css/style.css"> -->
-
-	<!--Theme Responsive css-->
-	<!-- <link rel="stylesheet" href="assets/css/responsive.css" /> -->
-
-	<!-- <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script> -->
+	<style>
+		.hero {
+			height: 100vh;
+			background: linear-gradient(rgba(0, 15, 58, 0.7), rgba(0, 15, 58, 0.7)),
+				url("./assets/images/homebg.jpg") no-repeat center center/cover;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			color: white;
+			padding-top: 80px;
+		}
+	</style>
 </head>
 
-<body data-spy="scroll" data-target="#mobileMenu" class="w-screen overflow-x-hidden">
 
-	<!-- <div class='preloader'>
-		<div class='loaded'>&nbsp;</div>
-	</div> -->
+<body>
+	<!-- Header -->
+	<header id="header">
+		<div class="container nav-container">
+			<div class="logo">
+				<img src="assets/images/logo.png" alt="Afro European Logo">
+			</div>
 
+			<button class="mobile-toggle" id="mobileToggle">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</button>
 
-	<div class="w-full overflow-hidden relative">
-		<header id="main_menu" class="fixed z-[999999] top-0 w-screen">
-			<div class="mt-0 bg-transparent">
-				<div class="container mx-auto">
-					<div class="-mx-4">
-						<div class="nav_menu">
-							<nav class="transition-all duration-500">
-								<div class="px-4 lg:px-8 mx-auto flex items-center justify-between py-2">
-									<!-- Brand and toggle get grouped for better mobile display -->
-									<div class="flex items-center justify-between w-full md:w-auto px-4 lg:px-0">
-										<a class="w-28 h-auto overflow-hidden" href="#home">
-											<img src="assets/images/logo.png" class="object-cover object-center" />
-										</a>
-										<!-- toggle button -->
-										<div class="md:hidden">
-											<button id="menuButton">
-												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-													viewBox="0 0 24 24" fill="none" stroke="#000f3a" stroke-width="2"
-													stroke-linecap="round" stroke-linejoin="round"
-													class="lucide lucide-menu" id="open">
-													<line x1="4" x2="20" y1="12" y2="12" />
-													<line x1="4" x2="20" y1="6" y2="6" />
-													<line x1="4" x2="20" y1="18" y2="18" />
-												</svg>
-												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-													viewBox="0 0 24 24" fill="none" stroke="#000f3a" stroke-width="2"
-													stroke-linecap="round" stroke-linejoin="round" class="hidden"
-													id="close">
-													<path d="M18 6 6 18" />
-													<path d="m6 6 12 12" />
-												</svg>
-											</button>
-										</div>
-									</div>
+			<ul class="nav-menu" id="navMenu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#team">Our Team</a></li>
+				<li><a href="/contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</header>
 
-									<!-- Collect the nav links, forms, and other content for toggling -->
+	<!-- Hero Section -->
+	<section class="hero" id="home">
+		<div class="container hero-content">
+			<h1>Building Cultural Bridges Through Education</h1>
+			<p>Afro European is more than a brand — it's a cultural bridge connecting African heritage with global
+				opportunities through innovative learning experiences.</p>
+			<div>
+				<a href="#services" class="btn">Explore Our Services</a>
+				<a href="#contact" class="btn btn-outline">Get In Touch</a>
+			</div>
+		</div>
+	</section>
 
-									<div class="border-[#e7e7e7]" id="bs-example-navbar-collapse-1">
-										<ul
-											class="nav navbar-nav navbar-right hidden md:flex gap-4 text-white font-semibold">
-											<li><a class="transition-all duration-100 ease-in hover:border-b-2  pb-2 nav-link"
-													href="#">HOME</a></li>
-											<li><a class="transition-all duration-100 ease-in hover:border-b-2  pb-2"
-													href="#team">TEAM</a></li>
-											<li><a class="transition-all duration-100 ease-in hover:border-b-2  pb-2"
-													href="./about.html">ABOUT US</a></li>
-											<li><a class="transition-all duration-100 ease-in hover:border-b-2  pb-2"
-													href="./contact.html">CONTACT US</a></li>
-										</ul>
-									</div>
-								</div>
-							</nav>
-						</div>
-					</div>
+	<!-- About Section -->
+	<section class="about" id="about">
+		<div class="container mx-auto px-10 xl:px-0">
+			<h2 class="section-title">About Us</h2>
+			<div class="about-content">
+				<div class="about-text text-center lg:text-left flex-col items-center lg:flex-row" id="aboutText">
+					<p>Afro European Business Services is more than a brand — it's a cultural bridge.</p>
+					<p>Rooted in Nigeria and reaching across the world, we are dedicated to preserving and promoting
+						African identity through storytelling, language learning, and digital innovation. We believe
+						that culture is not static — it's living, breathing, and evolving with every generation.</p>
+					<p>Afro-European Business Services provides online language courses, cultural education software,
+						and builds tailored educational platforms for schools and institutions. We support learners of
+						all ages in exploring local languages like Yoruba, Igbo, and Hausa, paired with global languages
+						such as German.</p>
+					<p>Whether you're a student curious about your roots, a parent raising multilingual children, an
+						educator seeking curriculum support, or a company looking to invest in inclusive, cross-cultural
+						learning — Afro European meets you where you are and helps you go further.</p>
+				</div>
+				<div class="about-image" id="aboutImage">
+					<img src="assets/images/about.jpeg" alt="About Afro European">
 				</div>
 			</div>
-			<div id="mobileMenu"
-				class="absolute top-[90px] w-screen h-0 z-50 right-0 overflow-hidden transition-all duration-500 ease-in-out bg-white">
-				<ul class="flex flex-col gap-3 py-6 px-4">
-					<li class=" group"><a href="./index.html"
-							class="block px-6 hover:bg-primary text-primary group-hover:text-white py-4 transition-colors duration-300 font-semibold">HOME</a>
-					</li>
-					<li class=" group"><a href="./about.html"
-							class="block px-6 hover:bg-primary py-4 text-primary group-hover:text-white   transition-colors duration-300 font-semibold">ABOUT
-							US</a></li>
-					<li class=" group"><a href="./contact.html"
-							class="block px-6 hover:bg-primary text-primary group-hover:text-white py-4 transition-colors duration-300 font-semibold">CONTACT
-							US</a>
-					</li>
-				</ul>
-			</div>
+		</div>
+	</section>
 
-		</header>
-		<!--End of header -->
-
-		<!--home Section -->
-		<section id="home" class="home h-[90vh]">
-			<div class="w-full h-full bg-[#000f3ab4] lg:flex lg:items-center lg:justify-center">
-				<div class="relative">
-					<div class="container px-4 mx-auto">
-						<div class="row">
-							<div class="w-full">
-								<div class="main_home_slider text-center">
-									<div class="single_home_slider">
-										<div class="main_home wow fadeInUp" data-wow-duration="700ms">
-											<h3 class="text-white text-xl lg:text-2xl font-medium">Our Clients, Our
-												Priority</h3>
-											<h1
-												class="font-bold text-4xl lg:text-[72px] tracking-[.4rem] leading-tight text-white">
-												WELCOME TO
-												<br />
-												AFRO-EUROPEAN
-											</h1>
-											<div class="separator"></div>
-											<p class="text-3xl lg:text-4xl text-white">Know Your Culture</p>
-										</div>
-									</div>
-									<div class="single_home_slider">
-										<div class="main_home wow fadeInUp" data-wow-duration="700ms">
-											<h3 class="text-white text-xl lg:text-2xl font-medium">Our Clients Are Our
-												Priority</h3>
-											<h1
-												class="font-bold text-4xl lg:text-[72px] tracking-[.4rem] leading-tight text-white">
-												WELCOME TO
-												<br />
-												AFRO-EUROPEAN
-											</h1>
-											<div class="separator"></div>
-											<p class="text-3xl lg:text-4xl text-white">Know Your Culture</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--End of home section -->
-
-		<!-- service Section -->
-		<section id="service" class="service py-12 bg-gray-100">
-			<div class="container mx-auto px-6 md:px-12 lg:px-20">
-				<h2
-					class="uppercase text-center text-primary underline lg:no-underline font-bold text-3xl lg:text-4xl mb-6">
-					Our
-					Products</h2>
-				<!-- sabi you -->
-				<div class="flex flex-col lg:flex-row items-start lg:items-center mb-10">
-
-					<div class="lg:w-1/2 flex justify-end lg:pr-12">
-						<div class="text-primary text-justify text-base">
-							<div class="mb-4">
-								<h2 class="text-2xl font-bold">SABI YOU</h2>
-							</div>
-							<div class="row">
-								<article class="text-black font-medium max-w-[800px] lg:max-w-[600px] leading-loose">
-									<strong>“SABI YOU”</strong> is our flagship project, and the idea behind,
-									that brought it
-									all to life. The word “sabi”, commonly used in Nigeria and throughout
-									Africa, meaning “to know”. So, “Sabi You”, for us, means “get to know
-									yourself”, your culture, your heritage, your identity. Only when you
-									know where you come from, will you know where you are going. We take
-									pride in showcasing our Nigerian culture to anyone who is interested,
-									but we constantly want to remind our children of their origins. We find
-									it is important for the younger generation to understand and accept
-									being a Nigerian, or African. It is great to reside and grow up abroad,
-									but Home must not be forgotten. <br />
-									<span class="lg:hidden xl:block">
-										By getting to know the culture and traditions, we are evoking a natural
-										desire for the languages to be discovered. Therefore, we offer language
-										classes for Yoruba, Igbo and Hausa which are wrapped into an engaging and
-										interesting format, away from a conventional learning environment. <br />
-										To round up the Sabi You experience, we are also offering introduction to
-										European languages, such as German, with plans for Spanish and Italian in
-										the future.
-										Sabi You is all about showcasing and awakening the Nigerian talent potential
-										and Africa in general.
-									</span>
-								</article>
-							</div>
-						</div>
-					</div><!-- End of col-sm-6 -->
-
-					<div class="w-full lg:w-1/2 h-[400px] lg:h-[500px] xl:h-[600px]">
-						<img src="./assets/images/sabi-you.jpg" class="w-full h-full object-cover object-top" alt="" />
-					</div><!-- End of col-sm-6 -->
-
+	<!-- Services Section -->
+	<section class="services" id="services">
+		<div class="container">
+			<h2 class="section-title">Our Services</h2>
+			<div class="services-grid">
+				<div class="service-card" id="service1">
+					<div class="service-icon">✨</div>
+					<h3>Language Learning Platforms</h3>
+					<p>Learn Yoruba, Igbo, or Hausa, paired with German and other languages, through engaging lessons,
+						cultural insights, and real-world applications.</p>
 				</div>
 
-				<!-- UK CULTURE -->
-				<div class="flex flex-col lg:flex-row items-start lg:items-center md:mt-4 mb-10">
-					<div class="w-full lg:w-1/2 h-[300px] lg:h-[500px] order-2 lg:order-1">
-						<img src="./assets/images/uk-culture.jpg" class="w-full h-full object-cover" alt="" />
-					</div><!-- End of col-sm-6 -->
-
-					<div class="lg:w-1/2 flex justify-end lg:pl-12 order-1 lg:order-2">
-						<div class="text-primary text-justify text-base">
-							<div class="mb-4">
-								<h2 class="text-2xl font-bold">UK CULTURE</h2>
-							</div>
-
-							<div class="row">
-								<div class="">
-									<div class="row">
-										<article
-											class="text-black font-medium max-w-[800px] lg:max-w-[600px] leading-loose">
-											As a migrant family ourselves, with mixed cultures, we have experienced the
-											UK for nearly 3 decades. Waded through ups and downs and learned some
-											things the hard way along the path. We are using our experience to offer
-											advice wherever needed and required. Many experience somewhat of a culture
-											shock when they first arrive, and there is a network of policies, procedures
-											and bureaucracy to navigate. We can help with this in the sense that we can
-											pinpoint you in the right direction for whatever your needs are.
-											If you want further information about the UK and its history, or you would
-											like to improve your English language skills, we’ve got you covered!
-										</article>
-									</div>
-								</div><!-- End of col-sm-12 -->
-
-							</div>
-						</div>
-					</div><!-- End of col-sm-6 -->
-
+				<div class="service-card" id="service2">
+					<div class="service-icon">💻</div>
+					<h3>Cultural Education Software</h3>
+					<p>Tools designed to help schools and institutions teach African languages and culture in a modern,
+						interactive way.</p>
 				</div>
 
-				<!-- AFRO-EUROPEAN SPORTS -->
-				<div class="flex flex-col lg:flex-row items-start lg:items-center mb-10">
-
-					<div class="lg:w-1/2 flex justify-end lg:pr-12">
-						<div class="text-primary text-justify text-base">
-							<div class="mb-4">
-								<h2 class="text-2xl font-bold">AFRO-EUROPEAN SPORTS</h2>
-							</div>
-
-							<div class="row">
-								<article class="text-black font-medium max-w-[800px] lg:max-w-[600px] leading-loose">
-									We are building a database for athletes to register their talent,
-									aspirations and goals. Further to this, we provide guidance on pathways into
-									sports such as Tennis, Football and Athletics. We will arrange talent events
-									where athletes can register and showcase their skills and network with teams
-									and/or coaches.
-								</article>
-							</div>
-						</div>
-					</div><!-- End of col-sm-6 -->
-
-					<div class="w-full lg:w-1/2 h-[300px] lg:h-[500px]">
-						<img src="./assets/images/ae-sport.jpg" class="w-full h-full object-cover object-top" alt="" />
-					</div><!-- End of col-sm-6 -->
-
-				</div>
-
-			</div>
-		</section><!-- End of service Section -->
-
-		<!-- Counter Section -->
-		<section id="counter" class="counter bg-primary relative overflow-hidden">
-			<img src="./assets/images/global.png" class="absolute inset-0 h-full object-cover object-center w-full"
-				alt="">
-			<div class="container mx-auto">
-				<div class="row">
-					<div class="px-4 lg:px-10">
-						<div class="main_counter_area text-center flex w-full justify-center">
-							<div class="grid grid-cols-2 lg:grid-cols-4 w-full lg:justify-items-center">
-								<div class="single_counter border_right">
-									<div class="col-sm-3 col-xs-12">
-										<div class="single_counter_item">
-											<i class="icon icon-thumbs-up"></i>
-											<h2 class="statistic-counter">0</h2>
-											<h4 class="text-3xl">Users</h4>
-										</div>
-									</div>
-								</div>
-
-								<div class="single_counter">
-									<div class="col-sm-3 col-xs-12">
-										<div class="single_counter_item">
-											<i class="icon icon-business-3"></i>
-											<h2 class="statistic-counter">0</h2>
-											<h4 class="text-3xl">Posts Last 24 Hours</h4>
-										</div>
-									</div>
-								</div>
-
-								<div class="single_counter">
-									<div class="col-sm-3 col-xs-12">
-										<div class="single_counter_item">
-											<i class="icon icon-people-32"></i>
-											<h2 class="statistic-counter">0</h2>
-											<h4 class="text-3xl">Total Posts</h4>
-										</div>
-
-									</div>
-								</div>
-
-								<div class="single_counter">
-									<div class="col-sm-3 col-xs-12">
-										<div class="single_counter_item">
-											<i class="icon icon-cup"></i>
-											<h2 class="statistic-counter">0</h2>
-											<h4 class="text-3xl">Amazing Features</h4>
-
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="service-card" id="service3">
+					<div class="service-icon">📱</div>
+					<h3>Custom Educational Platforms</h3>
+					<p>We build and deploy user-friendly digital platforms that make language and cultural learning
+						accessible to students, teachers, and communities.</p>
 				</div>
 			</div>
-		</section> <!-- End of counter section -->
+		</div>
+	</section>
 
-		<!-- Client Logo Section -->
-		<section id="clogo" class="hidden clogo bg-gray-100">
-			<div class="container mx-auto">
-				<div class="py-12 sections text-center">
-					<div class="head_title text-center">
-						<h2 class="uppercase font-bold text-3xl text-primary mb-6">Our Clients</h2>
-					</div><!-- End off Head_title -->
-					<div class="flex justify-between gap-7">
-						<div class="">
-							<img src="https://placehold.co/60" class="w-[80px] object-cover" alt="" />
-						</div>
-						<div class="">
-							<img src="https://placehold.co/60" class="w-[80px] object-cover" alt="" />
-						</div>
-						<div class="">
-							<img src="https://placehold.co/60" class="w-[80px] object-cover" alt="" />
-						</div>
-						<div class="">
-							<img src="https://placehold.co/60" class="w-[80px] object-cover" alt="" />
-						</div>
-						<div class="">
-							<img src="https://placehold.co/60" class="w-[80px] object-cover" alt="" />
-						</div>
-						<div class="">
-							<img src="https://placehold.co/60" class="w-[80px] object-cover" alt="" />
-						</div>
-						<div class="">
-							<img src="https://placehold.co/60" class="w-[80px] object-cover" alt="" />
-						</div>
+	<!-- Team Section -->
+	<section class="team" id="team">
+		<div class="container">
+			<h2 class="section-title">Our Team</h2>
+			<div class="team-grid">
+				<div class="team-member" id="member1">
+					<div class="member-image">
+						<img src="assets/images/durowoju.jpg" alt="Team Member">
+					</div>
+					<div class="member-info">
+						<h3>O. Durowoju</h3>
+						<p>Owner & Director</p>
 					</div>
 				</div>
-			</div>
-			<div class="divider"></div>
-		</section><!-- End off clogo Section -->
 
-		<section class="py-12 bg-white">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<h2 class="text-3xl font-extrabold text-gray-900">Our Partners</h2>
-				<a href="http://www.mistation.uk/" target="_blank" class="mt-8 flex items-center">
-					<img src="./assets/images/imagine.png" alt="My Imagination Station Ltd. Logo"
-						class="h-28 w-28 object-contain shadow-lg border-2 border-black/20">
-					<div class="ml-4">
-						<h3 class="text-2xl font-semibold text-gray-900">My Imagination Station Ltd.</h3>
-						<p class="mt-2 text-gray-600">A graphics and motion design company</p>
+				<div class="team-member" id="member2">
+					<div class="member-image">
+						<img src="assets/images/sodiya.jpg" alt="Team Member" class="object-top">
 					</div>
-				</a>
-			</div>
-		</section>
-
-		<!-- Our Courses Section -->
-		<section class="py-12 bg-gray-100">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<h2 class="text-3xl font-extrabold text-gray-900">Our Courses</h2>
-				<div class="mt-8 grid gap-8 lg:grid-cols-2">
-					<div class="flex flex-col sm:flex-row rounded-xl overflow-hidden bg-white shadow-lg">
-						<div class="bg-primary text-white p-8 basis-2/5">
-							<p class="text-xs font-semibold mb-2">COURSE</p>
-							<h3 class="text-2xl font-semibold">Yoruba and German
-							</h3>
-						</div>
-						<div class="p-8 pb-4 basis-3/5 flex flex-col items-end justify-between gap-8">
-							<div class="flex w-full justify-between text-primary">
-								<p class="text-xs font-semibold mb-2">8 CHAPTERS </p>
-								<div class="flex flex-col gap-2 items-end w-max">
-									<div class="h-1 bg-gray-100 rounded w-40 overflow-hidden">
-										<div class="h-full w-3/5 bg-primary"></div>
-									</div>
-									<p class="text-xs text-primary/80">6/9 Challenges</p>
-								</div>
-							</div>
-
-							<button
-								class="bg-primary text-white py-3 px-8 rounded-2xl text-sm border border-primary font-semibold hover:bg-white hover:text-primary transition-colors duration-300">Coming
-								soon </button>
-						</div>
-					</div>
-					<div class="flex flex-col sm:flex-row rounded-xl overflow-hidden bg-white shadow-lg">
-						<div class="bg-primary text-white p-8 basis-2/5">
-							<p class="text-xs font-semibold mb-2">COURSE</p>
-							<h3 class="text-2xl font-semibold">Igbo and German
-							</h3>
-						</div>
-						<div class="p-8 pb-4 basis-3/5 flex flex-col items-end justify-between gap-8">
-							<div class="flex w-full justify-between text-primary">
-								<p class="text-xs font-semibold mb-2">8 CHAPTERS </p>
-								<div class="flex flex-col gap-2 items-end w-max">
-									<div class="h-1 bg-gray-100 rounded w-40 overflow-hidden">
-										<div class="h-full w-3/5 bg-primary"></div>
-									</div>
-									<p class="text-xs text-primary/80">6/9 Challenges</p>
-								</div>
-							</div>
-
-							<button
-								class="bg-primary text-white py-3 px-8 rounded-2xl text-sm border border-primary font-semibold hover:bg-white hover:text-primary transition-colors duration-300">Coming
-								soon </button>
-						</div>
-					</div>
-					<div class="flex flex-col sm:flex-row rounded-xl overflow-hidden bg-white shadow-lg">
-						<div class="bg-primary text-white p-8 basis-2/5">
-							<p class="text-xs font-semibold mb-2">COURSE</p>
-							<h3 class="text-2xl font-semibold">Hausa and German
-							</h3>
-						</div>
-						<div class="p-8 pb-4 basis-3/5 flex flex-col items-end justify-between gap-8">
-							<div class="flex w-full justify-between text-primary">
-								<p class="text-xs font-semibold mb-2">8 CHAPTERS </p>
-								<div class="flex flex-col gap-2 items-end w-max">
-									<div class="h-1 bg-gray-100 rounded w-40 overflow-hidden">
-										<div class="h-full w-3/5 bg-primary"></div>
-									</div>
-									<p class="text-xs text-primary/80">6/9 Challenges</p>
-								</div>
-							</div>
-
-							<button
-								class="bg-primary text-white py-3 px-8 rounded-2xl text-sm border border-primary font-semibold hover:bg-white hover:text-primary transition-colors duration-300">Coming
-								soon </button>
-						</div>
-					</div>
-					<div class="flex flex-col sm:flex-row rounded-xl overflow-hidden bg-white shadow-lg">
-						<div class="bg-primary text-white p-8 basis-2/5">
-							<p class="text-xs font-semibold mb-2">COURSE</p>
-							<h3 class="text-2xl font-semibold">Swahili and German
-							</h3>
-						</div>
-						<div class="p-8 pb-4 basis-3/5 flex flex-col items-end justify-between gap-8">
-							<div class="flex w-full justify-between text-primary">
-								<p class="text-xs font-semibold mb-2">8 CHAPTERS </p>
-								<div class="flex flex-col gap-2 items-end w-max">
-									<div class="h-1 bg-gray-100 rounded w-40 overflow-hidden">
-										<div class="h-full w-3/5 bg-primary"></div>
-									</div>
-									<p class="text-xs text-primary/80">6/9 Challenges</p>
-								</div>
-							</div>
-
-							<button
-								class="bg-primary text-white py-3 px-8 rounded-2xl text-sm border border-primary font-semibold hover:bg-white hover:text-primary transition-colors duration-300">Coming
-								soon </button>
-						</div>
-					</div>
-
-					<div class="flex flex-col sm:flex-row rounded-xl overflow-hidden bg-white shadow-lg">
-						<div class="bg-primary text-white p-8 basis-2/5">
-							<p class="text-xs font-semibold mb-2">COURSE</p>
-							<h3 class="text-2xl font-semibold">UK Culture (Life in the UK)
-							</h3>
-						</div>
-						<div class="p-8 pb-4 basis-3/5 flex flex-col items-end justify-between gap-8">
-							<div class="flex w-full justify-between text-primary">
-								<p class="text-xs font-semibold mb-2">8 CHAPTERS </p>
-								<div class="flex flex-col gap-2 items-end w-max">
-									<div class="h-1 bg-gray-100 rounded w-40 overflow-hidden">
-										<div class="h-full w-3/5 bg-primary"></div>
-									</div>
-									<p class="text-xs text-primary/80">6/9 Challenges</p>
-								</div>
-							</div>
-
-							<button
-								class="bg-primary text-white py-3 px-8 rounded-2xl text-sm border border-primary font-semibold hover:bg-white hover:text-primary transition-colors duration-300">Coming
-								soon </button>
-						</div>
-					</div>
-					<div class="flex flex-col sm:flex-row rounded-xl overflow-hidden bg-white shadow-lg">
-						<div class="bg-primary text-white p-8 basis-2/5">
-							<p class="text-xs font-semibold mb-2">COURSE</p>
-							<h3 class="text-2xl font-semibold">Graphic and Motion Design for children
-							</h3>
-						</div>
-						<div class="p-8 pb-4 basis-3/5 flex flex-col items-end justify-between gap-8">
-							<div class="flex w-full justify-between text-primary">
-								<p class="text-xs font-semibold mb-2">8 CHAPTERS </p>
-								<div class="flex flex-col gap-2 items-end w-max">
-									<div class="h-1 bg-gray-100 rounded w-40 overflow-hidden">
-										<div class="h-full w-3/5 bg-primary"></div>
-									</div>
-									<p class="text-xs text-primary/80">6/9 Challenges</p>
-								</div>
-							</div>
-
-							<button
-								class="bg-primary text-white py-3 px-8 rounded-2xl text-sm border border-primary font-semibold hover:bg-white hover:text-primary transition-colors duration-300">Coming
-								soon </button>
-						</div>
+					<div class="member-info">
+						<h3>O. Sodiya</h3>
+						<p>Digital Project Manager</p>
 					</div>
 				</div>
+
+				<div class="team-member" id="member3">
+					<div class="member-image">
+						<img src="assets/images/ebuka.jpeg" alt="Team Member" class="object-top">
+					</div>
+					<div class="member-info">
+						<h3>Dr Ebuka Orangebunam</h3>
+						<p>Graphics Manager</p>
+					</div>
+				</div>
+
+
 			</div>
-		</section>
 
-		<!-- Our Team -->
-		<section id="team" class="bg-gradient-to-r from-primary to-primary/90 relative overflow-hidden">
-			<div class="container mx-auto py-12">
-				<h2 class="text-3xl font-extrabold text-white uppercase text-center mb-6">Meet the team</h2>
-				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-10">
-					<div
-						class="bg-gray-100 rounded-lg rounded-tl-[40px] rounded-br-[40px] text-primary group overflow-hidden shadow-lg">
-						<div class="h-[300px] overflow-hidden">
-							<img src="./assets/images/durowoju.jpg" alt=""
-								class="w-full h-[300px] object-cover rounded-md mb-4 object-top group-hover:scale-110 transition-all duration-300">
-						</div>
+			<div style="text-align: center; margin-top: 40px;">
+				<p>Behind Afro European services is a team of passionate culture-shapers, educators, storytellers,
+					designers, and digital thinkers who believe in the power of culture.</p>
+				<p>We are a diverse, cross-continental team grounded in African values and energized by global impact.
+					From tech and education to content and culture, each member of our team brings a unique voice to the
+					table, united by one mission: To make African culture visible, accessible, and empowering —
+					everywhere.</p>
+			</div>
+		</div>
+	</section>
 
-						<p class="text-3xl font-extrabold uppercase text-center leading-none mt-5">O. Durowoju</p>
-						<p class="font-semibold text-center mb-6">Owner & Director</p>
-					</div>
-					<div
-						class="bg-gray-100 rounded-lg rounded-tl-[40px] rounded-br-[40px] text-primary group overflow-hidden shadow-lg">
-						<div class="h-[300px] overflow-hidden">
-							<img src="./assets/images/sodiya.jpg" alt=""
-								class="w-full h-[300px] object-cover rounded-md mb-4 object-top group-hover:scale-110 transition-all duration-300">
-						</div>
+	<!-- Our Vision -->
+	<section class="clients" id="clients">
+		<div class="container">
+			<h2 class="section-title">Our Vision</h2>
 
-						<p class="text-3xl font-extrabold uppercase text-center leading-none mt-5">O. Sodiya</p>
-						<p class="font-semibold text-center mb-6">Digital Project Manager, <br /> Sabi You</p>
-					</div>
-					<div
-						class="bg-gray-100 rounded-lg rounded-tl-[40px] rounded-br-[40px] text-primary group overflow-hidden shadow-lg">
-						<div class="h-[300px] overflow-hidden">
-							<img src="./assets/images/makinde.jpg" alt=""
-								class="w-full h-[300px] object-cover rounded-md mb-4 object-top group-hover:scale-110 transition-all duration-300">
-						</div>
 
-						<p class="text-3xl font-extrabold uppercase text-center leading-none mt-5">O. Makinde</p>
-						<p class="font-semibold text-center mb-6">Graphics Manager, <br />Sabi You</p>
-					</div>
-					<div
-						class="bg-gray-100 rounded-lg rounded-tl-[40px] rounded-br-[40px] text-primary group overflow-hidden shadow-lg">
-						<div class="h-[300px] overflow-hidden">
-							<img src="./assets/images/mokwe.jpg" alt=""
-								class="w-full h-[300px] object-cover rounded-md mb-4 object-top group-hover:scale-110 transition-all duration-300">
-						</div>
+			<!-- <article class="text-black font-medium leading-loose text-justify mb-4">
+				&quot;Japa&quot; is a term most of us are all too familiar with these days.
+				Nigerians, Africans
+				altogether are looking for greener pastures outside their country and continent.
+				For
+				many people, the United Kingdom is the place of choice to relocate to. This is
+				where
+				we, Afro-European Business Services Ltd. come in. </article> -->
 
-						<p class="text-3xl font-extrabold uppercase text-center leading-none mt-5">C. Mokwe </p>
-						<p class="font-semibold text-center mb-6">Lead Animator, <br />Sabi You</p>
-					</div>
+			<article class=" text-justify">
+				Afro-European Business Services is the company behind several different projects
+				and partner-undertakings. <br />
+				Our vision is to provide a platform, a place for people to come together under
+				different aspects. A melting pot, if you so wish to call it, between Africa and Europe.
+				Although, we wouldn&#39;t want to limit ourselves to these two continents alone.
+				Wherever there are Africans, wanting to connect or come together, we aim to be in
+				the middle of it, and make it happen.<br />
+				Our projects are heavily focused on culture, heritage and most importantly the
+				identity that comes from all that.<br />
+				For those who know, we are providing a place to keep in touch with culture and
+				traditions, and for those who want to learn, we proudly want to show off, what makes
+				us who we are.<br />
+				We are privileged to live in times of technological advancement, so we believe we
+				should put this to good use. The world has become a global village, and we can stay
+				connected to friends and family wherever we find ourselves in the world.<br />
+				Why not also stay in touch with our culture, our traditions and our heritage. It is
+				wonderful to see people coming together from different cultures, so we want to keep
+				tapping into this. This can only foster harmony, as the more we know about each
+				other, the more we can appreciate each other. As with so many things, it’s the
+				differences that make us unique, but they can also bind us together.<br />
+				The mission is to encourage those who leave their countries and continent to not
+				forget where they have come from, and carry home in their heart, wherever they
+				might find themselves.<br />
+				We need to showcase the beauty and the richness of our continent and change
+				stereotypes. We aim to get to a point, where we people want to give back to their
+				respective communities and help create better lives for those, we left at home in
+				Africa.
+			</article>
 
+		</div>
+	</section>
+
+
+	<!-- Clients Section -->
+	<section class="clients" id="clients">
+		<div class="container">
+			<h2 class="section-title">Our Clients</h2>
+			<div class="clients-logos">
+				<div class="client-logo" id="client1">
+					<img src="assets/images/imagine.png" alt="Client Logo">
+				</div>
+				<div class="client-logo" id="client2">
+					<img src="assets/images/cals.png" alt="Client Logo">
 				</div>
 			</div>
-		</section> <!-- End of counter section -->
 
-		<!--Footer section-->
-		<footer class="bg-primary/20 text-primary">
-			<div class="container mx-auto py-6 lg:pt-10 lg:pb-10 px-4 xl:px-0">
-				<section class="mb-6 grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-					<div class="lg:col-span-2">
-						<img src="./assets/images/logo.png" alt="" width="112">
-						<p class="my-4 text-sm lg:text-base">11 William Street, <br />Greenock, PA15 1BT
-						</p>
-					</div>
-					<div class="text-sm lg:text-base">
-						<h3 class="text-base lg:text-xl underline font-bold mb-2">Who we are</h3>
-						<ul class=" space-y-2">
-							<li><a href="./about.html">About Us</a></li>
-							<li><a href="./contact.html">Contact</a></li>
-						</ul>
-					</div>
-					<div class="text-sm lg:text-base">
-						<h3 class="text-base lg:text-xl underline font-bold mb-2">Company</h3>
-						<ul class=" space-y-2">
-							<li><a href="/">Privacy Policy</a></li>
-							<li><a href="/">Terms and Conditions</a></li>
-						</ul>
-					</div>
-					<div class="text-sm lg:text-base">
-						<h3 class="text-base lg:text-xl underline font-bold mb-2">Connect</h3>
-						<ul class="flex gap-2">
-							<li>
-								<a href=""
-									class="flex items-center justify-center w-10 h-10 bg-primary text-white rounded-xl hover:bg-black">
-									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-										fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-										stroke-linejoin="round" class="feather feather-x">
-										<line x1="18" y1="6" x2="6" y2="18"></line>
-										<line x1="6" y1="6" x2="18" y2="18"></line>
-									</svg>
-
-
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/company/afro-european-business-services-ltd"
-									target="_blank"
-									class="flex items-center justify-center w-10 h-10 bg-primary text-white rounded-xl hover:bg-black">
-									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-										fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round"
-										stroke-linejoin="round" class="lucide lucide-linkedin">
-										<path
-											d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-										<rect width="4" height="12" x="2" y="9" />
-										<circle cx="4" cy="4" r="2" />
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href=""
-									class="flex items-center justify-center w-10 h-10 bg-primary text-white rounded-xl hover:bg-black">
-									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-										fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round"
-										stroke-linejoin="round" class="lucide lucide-instagram">
-										<rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-										<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-										<line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-									</svg>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<p class="text-center">©2024, All Rights Reserved</p>
+			<div style="text-align: center; margin-top: 40px;">
+				<p>Afro European works with families, schools, educators, and forward-thinking organizations who believe
+					in the power of African identity and the potential of cross-cultural learning. Our clients span from
+					families reconnecting with their roots, to institutions aiming to enrich their
+					curriculum with indigenous languages, and companies seeking meaningful cultural partnerships.</p>
+				<p>Whether you're an individual learner, a school administrator, or a CEO — if you value inclusion,
+					culture, and global relevance, you'll feel at home with Afro European.</p>
 			</div>
-		</footer>
-	</div>
+		</div>
+	</section>
 
-	<!-- START SCROLL TO TOP  -->
+	<!--Footer section-->
+	<footer class="bg-primary/20 text-primary">
+		<div class="container mx-auto py-6 lg:pt-10 lg:pb-10 px-4 xl:px-0">
+			<section class="mb-6 grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+				<div class="col-span-2 fade-in">
+					<img src="./assets/images/logo.png" alt="" width="112">
+					<p class="my-4 text-sm text-left">11 William Street, <br />Greenock, PA15 1BT</p>
+				</div>
+				<div class="text-sm fade-in delay-1">
+					<h3 class="text-base lg:text-xl underline font-bold mb-2 text-left">Who we are</h3>
+					<ul class="space-y-2 text-left">
+						<li><a href="./about.html">About Us</a></li>
+						<li><a href="./contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="text-sm fade-in delay-2">
+					<h3 class="text-base lg:text-xl underline font-bold mb-2 text-left">Company</h3>
+					<ul class="space-y-2 text-left">
+						<li><a href="/">Privacy Policy</a></li>
+						<li><a href="/">Terms and Conditions</a></li>
+					</ul>
+				</div>
+				<div class="text-sm fade-in delay-3">
+					<h3 class="text-base lg:text-xl underline font-bold mb-2 text-left">Connect</h3>
+					<ul class="flex gap-2 text-left">
+						<li>
+							<a href=""
+								class="flex items-center justify-center w-10 h-10 bg-primary text-white rounded-xl hover:bg-black hover-lift">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+									stroke-linejoin="round" class="feather feather-x">
+									<line x1="18" y1="6" x2="6" y2="18"></line>
+									<line x1="6" y1="6" x2="18" y2="18"></line>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/company/afro-european-business-services-ltd"
+								target="_blank"
+								class="flex items-center justify-center w-10 h-10 bg-primary text-white rounded-xl hover:bg-black hover-lift">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+									fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round"
+									stroke-linejoin="round" class="lucide lucide-linkedin">
+									<path
+										d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+									<rect width="4" height="12" x="2" y="9" />
+									<circle cx="4" cy="4" r="2" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/heartofafrica2025/" target="_blank"
+								class="flex items-center justify-center w-10 h-10 bg-primary text-white rounded-xl hover:bg-black hover-lift">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+									fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round"
+									stroke-linejoin="round" class="lucide lucide-instagram">
+									<rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+									<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+									<line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<p class="text-center fade-in">©2024, All Rights Reserved</p>
+		</div>
+	</footer>
 
-
-	<div class="scrollup">
-		<a href="#"><i class="fa fa-chevron-up"></i></a>
+	<div>
+		<a class="scrollup flex items-center justify-center" href="#header"><svg xmlns="http://www.w3.org/2000/svg"
+				width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+				stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up">
+				<path d="m18 15-6-6-6 6" />
+			</svg></a>
 	</div>
 
 	<script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
 	<script src="assets/js/vendor/bootstrap.min.js"></script>
-
 	<script src="assets/js/jquery.magnific-popup.js"></script>
 	<script src="assets/js/jquery.mixitup.min.js"></script>
 	<script src="assets/js/jquery.easing.1.3.js"></script>
 	<script src="assets/js/jquery.masonry.min.js"></script>
-
-	<!--slick slide js -->
 	<script src="assets/css/slick/slick.js"></script>
 	<script src="assets/css/slick/slick.min.js"></script>
-
-
 	<script src="assets/js/plugins.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script>
-		const menuButton = document.getElementById("menuButton");
-		const mobileMenu = document.getElementById("mobileMenu");
-		const open = document.getElementById("open");
-		const close = document.getElementById("close");
 
-		menuButton.addEventListener("click", () => {
-			mobileMenu.classList.toggle("h-[90vh]");
-			open.classList.toggle("hidden");
-			close.classList.toggle("hidden");
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<script>
+		// Mobile menu toggle
+		const mobileToggle = document.getElementById('mobileToggle');
+		const navMenu = document.getElementById('navMenu');
+
+		mobileToggle.addEventListener('click', () => {
+			navMenu.classList.toggle('active');
 		});
 
+		// Header scroll effect
+		const header = document.getElementById('header');
+
+		window.addEventListener('scroll', () => {
+			if (window.scrollY > 50) {
+				header.classList.add('scrolled');
+			} else {
+				header.classList.remove('scrolled');
+			}
+		});
+
+		// Animation on scroll
+		function isInViewport(element) {
+			const rect = element.getBoundingClientRect();
+			return (
+				rect.top >= 0 &&
+				rect.left >= 0 &&
+				rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+				rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+			);
+		}
+
+		function checkScroll() {
+			const aboutText = document.getElementById('aboutText');
+			const aboutImage = document.getElementById('aboutImage');
+			const service1 = document.getElementById('service1');
+			const service2 = document.getElementById('service2');
+			const service3 = document.getElementById('service3');
+			const member1 = document.getElementById('member1');
+			const member2 = document.getElementById('member2');
+			const member3 = document.getElementById('member3');
+			const member4 = document.getElementById('member4');
+			const client1 = document.getElementById('client1');
+			const client2 = document.getElementById('client2');
+			const client3 = document.getElementById('client3');
+			const client4 = document.getElementById('client4');
+			const contactInfo = document.getElementById('contactInfo');
+			const contactForm = document.getElementById('contactForm');
+
+			if (isInViewport(aboutText) && !aboutText.classList.contains('animated')) {
+				aboutText.classList.add('animated');
+			}
+
+			if (isInViewport(aboutImage) && !aboutImage.classList.contains('animated')) {
+				aboutImage.classList.add('animated');
+			}
+
+			if (isInViewport(service1) && !service1.classList.contains('animated')) {
+				service1.classList.add('animated');
+			}
+
+			if (isInViewport(service2) && !service2.classList.contains('animated')) {
+				service2.classList.add('animated');
+			}
+
+			if (isInViewport(service3) && !service3.classList.contains('animated')) {
+				service3.classList.add('animated');
+			}
+
+			if (isInViewport(member1) && !member1.classList.contains('animated')) {
+				member1.classList.add('animated');
+			}
+
+			if (isInViewport(member2) && !member2.classList.contains('animated')) {
+				member2.classList.add('animated');
+			}
+
+			if (isInViewport(member3) && !member3.classList.contains('animated')) {
+				member3.classList.add('animated');
+			}
+
+			if (isInViewport(member4) && !member4.classList.contains('animated')) {
+				member4.classList.add('animated');
+			}
+
+			if (isInViewport(client1) && !client1.classList.contains('animated')) {
+				client1.classList.add('animated');
+			}
+
+			if (isInViewport(client2) && !client2.classList.contains('animated')) {
+				client2.classList.add('animated');
+			}
+
+			if (isInViewport(client3) && !client3.classList.contains('animated')) {
+				client3.classList.add('animated');
+			}
+
+			if (isInViewport(client4) && !client4.classList.contains('animated')) {
+				client4.classList.add('animated');
+			}
+
+			if (isInViewport(contactInfo) && !contactInfo.classList.contains('animated')) {
+				contactInfo.classList.add('animated');
+			}
+
+			if (isInViewport(contactForm) && !contactForm.classList.contains('animated')) {
+				contactForm.classList.add('animated');
+			}
+		}
+
+		window.addEventListener('scroll', checkScroll);
+		window.addEventListener('load', checkScroll);
+
+		// Smooth scrolling for navigation links
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				const targetId = this.getAttribute('href');
+				if (targetId === '#') return;
+
+				const targetElement = document.querySelector(targetId);
+				if (targetElement) {
+					window.scrollTo({
+						top: targetElement.offsetTop - 80,
+						behavior: 'smooth'
+					});
+
+					// Close mobile menu if open
+					if (navMenu.classList.contains('active')) {
+						navMenu.classList.remove('active');
+					}
+				}
+			});
+		});
 	</script>
 </body>
 
