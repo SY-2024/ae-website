@@ -527,22 +527,18 @@ header.scrolled {
   background-color: white;
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 50px;
-}
-
 .service-card {
   background-color: var(--light);
   border-radius: 10px;
-  padding: 30px;
+  padding: 16px;
   text-align: center;
   transition: var(--transition);
   opacity: 0;
   transform: translateY(50px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.service-card p {
+  font-size: 14px;
 }
 
 .service-card.animated {
@@ -555,6 +551,10 @@ header.scrolled {
 
 .service-card:nth-child(3) {
   animation-delay: 0.4s;
+}
+
+.service-card:nth-child(4) {
+  animation-delay: 0.6s;
 }
 
 .service-card:hover {
