@@ -169,24 +169,18 @@ export default function Footer() {
             </h4>
             <div className="flex gap-2 mb-6">
               <a
-                href="https://www.linkedin.com/company/afro-european-business-services-ltd"
+                href="https://www.instagram.com/afro_european?cplk=cWl0YzQwZ2lzbXln&utm_source=qr"
                 target="_blank"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-[#0A1931] transition-colors"
               >
-                <span className="text-[12px] font-bold">in</span>
+                <span className="text-[12px] font-bold">AE</span>
               </a>
               <a
-                href="https://www.instagram.com/heartofafrica2025/"
+                href="https://www.instagram.com/heartofafrica2025?dlrf=MXByZ3ZvbHdnc2hwYQ%3D%3D&utm_source=qr"
                 target="_blank"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-[#0A1931] transition-colors"
               >
-                <span className="text-[12px]">◍</span>
-              </a>
-              <a
-                href="mailto:hello@afroeuropean.uk"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-[#0A1931] transition-colors"
-              >
-                <span className="text-[12px]">@</span>
+                <span className="text-[12px]">HOA</span>
               </a>
             </div>
             <div className="text-[11px] leading-[1.6] text-white/40">

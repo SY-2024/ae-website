@@ -1,5 +1,4 @@
 import {motion, useScroll, useTransform} from "framer-motion";
-import {Link} from "react-router-dom";
 import {useRef, useState} from "react";
 import HomeBg from "../assets/homebg.jpg";
 
@@ -9,7 +8,9 @@ export default function Hero() {
     target: ref,
     offset: ["start start", "end start"],
   });
+  // @ts-ignore
   const [isOpen, setIsOpen] = useState(false);
+  // @ts-ignore
   const [activeHash, setActiveHash] = useState("");
 
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
