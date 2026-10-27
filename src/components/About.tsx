@@ -93,6 +93,10 @@ export default function About() {
                 confidence.
               </p>
               <p>
+                We are also expanding to provide learning resources for Tagalog,
+                Urdu, Punjabi and Arabic.
+              </p>
+              <p>
                 In a globalized world, technology enables us to stay connected.
                 We harness this to preserve traditions, promote harmony through
                 cultural understanding, and celebrate the unique differences

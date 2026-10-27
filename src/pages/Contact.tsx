@@ -200,10 +200,10 @@ export default function Contact() {
                         Email
                       </div>
                       <a
-                        href="mailto:hello@afroeuropean.uk"
+                        href="mailto:info@afroeuropean.uk"
                         className="mt-1 block text-[14px] text-[#E9B44C] hover:text-white transition-colors"
                       >
-                        hello@afroeuropean.uk
+                        info@afroeuropean.uk
                       </a>
                       <a
                         href="mailto:info@afroeuropean.uk"

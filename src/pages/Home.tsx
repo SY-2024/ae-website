@@ -87,8 +87,8 @@ export default function Home() {
               {
                 quote:
                   "As a school, we wanted authentic African language resources, not translated textbooks. Their platform is exactly what we needed.",
-                name: "Sarah Mitchell",
-                role: "Headteacher • Glasgow",
+                name: "Joan McKenna",
+                role: "Deputy Head, Wellpark Nursery • Glasgow",
                 initial: "SM",
               },
             ].map((t, i) => (
