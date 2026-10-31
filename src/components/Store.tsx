@@ -1,16 +1,14 @@
 import {motion} from "framer-motion";
 import {ShieldCheck, Truck, Mail} from "lucide-react";
 
-// Temporary product photos — replace the files in src/assets/store/ with real ones
-import GermanTextbookImg from "../assets/store/german-a1-textbook.jpg";
-import MandarinTextbookImg from "../assets/store/mandarin-hsk1-textbook.jpg";
-import MandarinFlashcardsImg from "../assets/store/mandarin-hsk1-flashcards.jpg";
-import GermanFlashcardsImg from "../assets/store/german-a1-flashcards.jpg";
+import GermanTextbookImg from "../assets/store/german-a1-textbook.png";
+import MandarinTextbookImg from "../assets/store/mandarin-hsk1-textbook.png";
+import MandarinFlashcardsImg from "../assets/store/mandarin-hsk1-flashcards.png";
+import GermanFlashcardsImg from "../assets/store/german-a1-flashcards.png";
 
 type Product = {
   name: string;
   type: "Textbook" | "Flashcard Booklet";
-  desc: string;
   price: string;
   breakdown: string;
   image: string;
@@ -22,7 +20,6 @@ const products: Product[] = [
   {
     name: "A1 German Beginner's Textbook",
     type: "Textbook",
-    desc: "Your complete first step into German — grammar, vocabulary and everyday conversation, structured lesson by lesson for absolute beginners.",
     price: "£13.99",
     breakdown: "£10 textbook + £3.99 postage",
     image: GermanTextbookImg,
@@ -32,7 +29,6 @@ const products: Product[] = [
   {
     name: "HSK 1 Mandarin Textbook",
     type: "Textbook",
-    desc: "Build a solid foundation in Mandarin with characters, pinyin and practical dialogues aligned to the HSK 1 syllabus.",
     price: "£13.99",
     breakdown: "£10 textbook + £3.99 postage",
     image: MandarinTextbookImg,
@@ -42,7 +38,6 @@ const products: Product[] = [
   {
     name: "HSK 1 Mandarin Flashcard Booklet",
     type: "Flashcard Booklet",
-    desc: "Master essential HSK 1 vocabulary on the go — characters, pinyin and English meanings in a handy booklet for quick daily review.",
     price: "£9.99",
     breakdown: "£6 flashcards + £3.99 postage",
     image: MandarinFlashcardsImg,
@@ -52,7 +47,6 @@ const products: Product[] = [
   {
     name: "A1 German Vocabulary Flashcard Booklet",
     type: "Flashcard Booklet",
-    desc: "Learn and recall core German A1 words anywhere — portable flashcards with articles, plurals and English translations.",
     price: "£9.99",
     breakdown: "£6 flashcards + £3.99 postage",
     image: GermanFlashcardsImg,
@@ -101,9 +95,9 @@ export default function Store() {
             transition={{delay: 0.2}}
             className="max-w-[380px] text-[15px] leading-[1.7] text-[#0A1931]/60"
           >
-            Our textbooks and flashcard booklets are made to sit right
-            alongside your classes — so practice continues long after the
-            lesson ends. Every price includes UK postage.
+            Our textbooks and flashcard booklets are made to sit right alongside
+            your classes — so practice continues long after the lesson ends.
+            Every price includes UK postage.
           </motion.p>
         </div>
 
@@ -126,7 +120,7 @@ export default function Store() {
                 <img
                   src={p.image}
                   alt={p.imageAlt}
-                  className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="aspect-4/5 w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <span
                   className={`absolute top-4 left-4 px-2.5 py-1 rounded-full text-[10px] font-bold tracking-wide uppercase ${
@@ -143,9 +137,6 @@ export default function Store() {
                 <h3 className="font-display font-bold text-[18px] leading-[1.25] text-[#0A1931] mb-2">
                   {p.name}
                 </h3>
-                <p className="text-[13px] leading-[1.6] text-[#0A1931]/60 flex-1">
-                  {p.desc}
-                </p>
 
                 <div className="mt-5 flex items-baseline gap-2">
                   <span className="font-display font-bold text-[24px] text-[#0A1931]">
