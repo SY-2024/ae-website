@@ -127,6 +127,18 @@ export default function Footer() {
                   Our Team
                 </button>
               </li>
+              <li>
+                <button
+                  onClick={() =>
+                    document
+                      .querySelector("#store")
+                      ?.scrollIntoView({behavior: "smooth"})
+                  }
+                  className="hover:text-white transition-colors"
+                >
+                  Store
+                </button>
+              </li>
             </ul>
           </div>
 
