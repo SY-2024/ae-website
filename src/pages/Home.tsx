@@ -6,6 +6,7 @@ import Languages from "../components/Languages";
 import Team from "../components/Team";
 import Vision from "../components/Vision";
 import Clients from "../components/Clients";
+import Store from "../components/Store";
 
 export default function Home() {
   return (
@@ -49,6 +50,7 @@ export default function Home() {
       <Team />
       <Vision />
       <Clients />
+      <Store />
 
       {/* Testimonials */}
       <section className="py-24 lg:py-32 bg-[#FFFBF5]">
